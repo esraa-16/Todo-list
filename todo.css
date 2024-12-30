@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+    margin-top: 50px;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.task-input input:focus{
+
+    outline: solid 1px #0A74DA;
+} 
+
+.task-input button {
+    background-color: #0A74DA;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.task-input button:hover {
+    background-color: #085baf;
+}
+
+.task-list {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-card.completed {
+    text-decoration: line-through;
+    color: #aaa;
+    background: #e8e8e8;
+}
+
+.task-card button {
+    background-color: #FF4C4C;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.task-card button:hover {
+    background-color: #d43d3d;
+}
+
+.task-card .complete {
+    cursor: pointer;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+    .task-input input {
+        width: 100%;
+    }
+}
